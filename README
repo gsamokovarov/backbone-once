@@ -2,4 +2,6 @@
 |   __ \.---.-.----.|  |--.|  |--.-----.-----.-----. |_   |  
 |   __ <|  _  |  __||    < |  _  |  _  |     |  -__|  _|  |_ 
 |______/|___._|____||__|__||_____|_____|__|__|_____| |______|
-                One-off events for Backbone.                
+                One-off events for Backbone.
+
+Use this plugin to backport the one-off event introduced in 0.9.9.
