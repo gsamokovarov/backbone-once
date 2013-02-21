@@ -6,12 +6,12 @@
     // remove itself from the callbacks list.
     once: function(events, callback, context) {
       var boundOff = _.bind(this.off, this);
-      var oneOffCallback = function() {
+      var oneOffCallback = _.once(function() {
         boundOff(events, oneOffCallback);       
         callback.apply(context, arguments);
-      };
+      });
 
-      return this.on(events, oneOffCallback);
+      return this.on(events, oneOffCallback, context);
     }
 
   });
